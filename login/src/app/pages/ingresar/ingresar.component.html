@@ -1,0 +1,11 @@
+<div>
+    <form #FormIngreso="ngForm" (ngSubmit)="ingresar(FormIngreso)">
+      <span>Login</span>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" [(ngModel)]="usuario.correo">
+      <label for="password">Pasword</label>
+      <input id="password" name="password" [(ngModel)]="usuario.clave" type="password">
+      <a routerLink="/registrar">No tienes cuenta?</a>
+      <button type="submit">Ingresar</button>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <form #FormCreacion="ngForm" (ngSubmit)="crearUsuario(FormCreacion)">
+      <span>Crear Usuario</span>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" [(ngModel)]="usuario.correo">
+      <label for="nombre">Nombres</label>
+      <input id="nombre" name="nombre" [(ngModel)]="usuario.nombre" type="text">
+      <label for="password">Pasword</label>
+      <input id="password" name="password" [(ngModel)]="usuario.clave" type="password">
+      <a routerLink="/ingresar">Ya tienes cuenta?</a>
+      <button type="submit">Crear</button>
+    </form>
+</div>
